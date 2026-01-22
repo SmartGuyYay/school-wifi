@@ -5,7 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internet Troubleshooting</title>
 	<link rel="icon" type="image/x-icon" href="OSS.png">
-    <style>
+ 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: orange;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="homepage.html" class="active">Home</a>
+  <a href="iDET-&-EQNET-Troubleshooting.html">Internet Troubleshooting</a>
+  <a href="BYOD.html">BYOD</a>
+  <a href="FAQs.html">FAQs</a>
+  <a href="about.html">About Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+ <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -46,28 +136,58 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-			
-			
-			}
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Internet Troubleshooting</h1>
-    </header>
-    <nav>
-        <a href="homepage.html">Home</a>
-		<a href="iDET-&-EQNET-Troubleshooting.html">Internet Troubleshooting</a>
-        <a href="BYOD.html">BYOD</a>
-        <a href="FAQs.html">FAQs</a>
-		<a href="about.html">About</a>
-    </nav>
+ <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	.container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	}
+
+	.bottom-left {
+	  position: absolute;
+	  bottom: 8px;
+	  left: 16px;
+	}
+
+	.top-left {
+	  position: absolute;
+	  top: 8px;
+	  left: 16px;
+	}
+
+	.top-right {
+	  position: absolute;
+	  top: 8px;
+	  right: 16px;
+	}
+
+	.bottom-right {
+	  position: absolute;
+	  bottom: 8px;
+	  right: 16px;
+	}
+
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	</style>
+	</head>
+	<body>
 
 
-	<center> <font color=" #000000"> <p style="font-size: 20px"> When you first try to connect to the school wi-fi, there are some important steps that you need to follow. This guide aims to help you get your internet up and going! If you follow the steps, and your internet is still not working, try looking in the FAQs. </font>
-      
-      
+	<div class="container">
+	 <img src="school-banner.jpg" width="100%" height="auto">
+  <div class="centered"> <p style="font-size:4.5vw"><font color="#FFA500">Internet Troubleshooting</div>
+      </div>
+
+
+	<center> <font color=" #000000"> <p style="font-size: 20px"> When you first try to connect to the school wi-fi, there are some important steps that you need to follow. This guide aims to help you get your internet up and going! If you follow the steps, and your internet is still not working, try looking in the FAQs.</font>      
       <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
@@ -78,12 +198,12 @@
 
 
 	<div class="container">
-	 <img src="school-banner.jpg" width="100%" height="auto">
+	 <img src="school-banner-slim.jpg" width="100%" height="auto">
   
-	    <div class="centered"> <p style="font-size:6.5vw"><font color="#FFA500">Part 1 - Wifi Connection</div>
+	    <div class="centered"> <p style="font-size:3vw"><font color="#FFA500">Wi-fi Connection - Part 1</div>
       </div>
 	
-      <center> <font color=" #000000"> <p style="font-size: 20px"> If you've not connected to the school network previously, you need to follow some extra steps before you can access wi-fi. </font>  
+      <center> <font color=" #000000"> <p style="font-size: 20px"> If you've not connected to the school network previously, you need to follow some extra steps before you can access wi-fi. If you have already connected to school wi-fi, go directly to <a href="#part2">Part 2</a>
         
   <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>   
         
@@ -304,23 +424,29 @@ img {
 	</head>
 	<body>
 
+  <section id="part2" class="content">
 
 	<div class="container">
-	 <img src="school-banner.jpg" width="100%" height="auto">
+	 <img src="school-banner-slim.jpg" width="100%" height="auto">
   
-	    <div class="centered"> <p style="font-size:6.5vw"><font color="#FFA500">Part 2</div>
+	    <div class="centered"> <p style="font-size:3vw"><font color="#FFA500">Wi-fi Connection - Part 2</div>
       </div>
+
 	  
 	  <center> <font color=" #000000"> <p style="font-size: 20px"> If you've already connected to the school wifi, there are two main problems that can cause your internet to stop working. Here are some solutions to some common reasons that your wi-fi may not work.</font>
 	
 	<div class="container">
-	 <img src="school-banner.jpg" width="100%" height="auto">
+	 <img src="school-banner-slim.jpg" width="100%" height="auto">
 
-	    <div class="centered"> <p style="font-size:6.5vw"><font color="#FFA500">Solution 1</div>
+
+	    <div class="centered"> <p style="font-size:3vw"><font color="#FFA500">Solution 1</div>
       </div>  
 	  
      <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>
-    <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Tap on "Settings".</font> </b>
+ <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Step 1</font> </b>
+      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
+
+    <center> <font color=" #000000"> <p style="font-size: 20px">Restart your iPad and open settings. You will get a pop up, and then tap on "Settings".</font>
        <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
 
      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
@@ -332,7 +458,9 @@ img {
    
 		
      <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>
- <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Enter your MIS username and password.</font> </b>	
+ <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Step 2</font> </b>
+
+   <center> <font color=" #000000"> <p style="font-size: 20px">Enter your MIS username and password.</font> 	
        <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
 
      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
@@ -348,15 +476,19 @@ img {
       <center> <font color=" #000000"> <p style="font-size: 20px"> Done! Your internet should be working again. </font>	   
 		   
 	   	<div class="container">
-	   	 <img src="school-banner.jpg" width="100%" height="auto">
-		 
-   	    <div class="centered"> <p style="font-size:6.5vw"><font color="#FFA500">Solution 2</div>
-         </div>
+	 <img src="school-banner-slim.jpg" width="100%" height="auto">
+
+
+	    <div class="centered"> <p style="font-size:3vw"><font color="#FFA500">Solution 2</div>
+      </div>  
+
 		 
 	      <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>
 
-	        <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
-  <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Tap on the "I" button.</font> </b>
+	        <center> <font color=" #000000"> <p style="font-size: 20px"> </font> 
+ <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Step 1</font> </b>
+   <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
+    <center> <font color=" #000000"> <p style="font-size: 20px">Tap on the "i" button.</font> 
 	      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
 
 	       <img src="reason2-1.jpg" alt="Oakleigh State School" style="width:35%;">
@@ -368,7 +500,9 @@ img {
 	      <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>
 
 	        <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
-  <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Tap on "Configure Proxy".</font> </b>
+<b>   <center> <font color=" #000000"> <p style="font-size: 20px">Step 2</font> </b>
+      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
+   <center> <font color=" #000000"> <p style="font-size: 20px">Tap on "Configure Proxy".</font> 
 	      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
 
 	       <img src="reason2-2.jpg" alt="Oakleigh State School" style="width:35%;">
@@ -378,9 +512,10 @@ img {
 
 	  
 		      <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>
-
-		        <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
-	  <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Tap on "Automatic".</font> </b>
+ <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
+<b>   <center> <font color=" #000000"> <p style="font-size: 20px">Step 3</font> </b>
+      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
+	     <center> <font color=" #000000"> <p style="font-size: 20px">Tap on "Automatic".</font> 
 		      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
 
 		       <img src="reason2-3.jpg" alt="Oakleigh State School" style="width:35%;">
@@ -391,8 +526,11 @@ img {
 		  
 			      <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>
 
-			        <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
-  <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Type in "http://autoproxy.eq.edu.au/".</font> </b>
+			     <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
+<b>   <center> <font color=" #000000"> <p style="font-size: 20px">Step 4</font> </b>
+      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
+
+  <center> <font color=" #000000"> <p style="font-size: 20px">Type in "http://autoproxy.eq.edu.au/".</font>
 			      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
 
 			       <img src="reason2-4.jpg" alt="Oakleigh State School" style="width:35%;">
@@ -402,9 +540,10 @@ img {
 		
 			  
    			      <center> <font color=" #000000"> <p style="font-size: 20px"> ----------------------------------------- </font>
-
-   			        <center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
-  <b>   <center> <font color=" #000000"> <p style="font-size: 20px">Tap on save.</font> </b>
+<center> <font color=" #000000"> <p style="font-size: 20px"> </font>   
+<b>   <center> <font color=" #000000"> <p style="font-size: 20px">Step 5</font> </b>
+      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
+     <center> <font color=" #000000"> <p style="font-size: 20px">Tap on "save".</font> 
    			      <center> <font color=" #000000"> <p style="font-size: 20px"> </font>  
 
    			       <img src="reason2-5.jpg" alt="Oakleigh State School" style="width:35%;">
